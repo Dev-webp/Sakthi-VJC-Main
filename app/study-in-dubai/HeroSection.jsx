@@ -32,25 +32,28 @@ export default function Hero({ setIsOpen }) {
 
   return (
     <section
-      ref={sectionRef}
-      className="relative min-h-screen pt-36 pb-8 px-4 md:px-6 lg:px-14 lg:-mt-14 overflow-hidden flex items-center justify-center"
-    >
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className={`absolute inset-0 w-full h-full object-cover transition-all duration-[1500ms] ease-out transform ${
-          isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-        }`}
-      >
-        <source src="/uk.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+  ref={sectionRef}
+  className="relative min-h-screen pt-36 pb-8 px-4 md:px-6 lg:px-14 lg:-mt-14 overflow-hidden flex items-center justify-center"
+>
+  {/* Background Image */}
+  <div 
+    className={`absolute inset-0 w-full h-full transition-all duration-[1500ms] ease-out transform ${
+      isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+    }`}
+  >
+    <Image
+      src="studyindubai/bg.jpg" // Replace with your image path
+      alt="Background"
+      fill
+      className="object-cover"
+      unoptimized={true}
+    />
+  </div>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/90 z-0 pointer-events-none" />
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/40 z-0 pointer-events-none" />
+  
+  
 
       {/* Content */}
       <div className="relative z-8 w-full max-w-[1440px] md:ml-4 flex flex-col lg:flex-row items-center justify-center gap-10">

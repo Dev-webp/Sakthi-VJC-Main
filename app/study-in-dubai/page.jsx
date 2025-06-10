@@ -11,7 +11,7 @@ import GuidanceSection from './GuidanceSection';
 import ScholarshipOverview from './ScholarshipOverview';
 import WhyVJC from './WhyVJC';
 import ModalFormWithPopup from '../Popup/Popup';
-import UkImageContent from '../Popup/UKImageContent'; // Adjust path if different
+import DubaiImageContent from '../Popup/DubaiImageContent'; // Adjust path if different
 
 
 import { useState } from 'react';
@@ -24,7 +24,7 @@ export default function StudyInUKPage() {
     
       <HeroSection setIsOpen={setIsOpen}/>
      
-      <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<UkImageContent />} />
+      <ModalFormWithPopup isOpen={isOpen} setIsOpen={setIsOpen} customContent={<DubaiImageContent />} />
       <ScholarshipUK />
       <StudentCounselling />
       <Studyinuk />

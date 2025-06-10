@@ -9,12 +9,12 @@ import Image from "next/image"; // <-- Added import
 
 const items = [
   {
-    id: "001",
+   
     title: "Get Admission in a Recognized Institution",
     desc: "Apply to a Dubai-based university or college and obtain an official Offer Letter to start your visa application.",
   },
   {
-    id: "002",
+   
     title: "Documentation and Visa Application",
     desc: `Once your admission is confirmed, the university typically acts as your visa sponsor. You’ll need to submit:
 • Valid passport (min 6 months’ validity)
@@ -26,12 +26,12 @@ const items = [
 • Student visa application form.`,
   },
   {
-    id: "003",
+    
     title: "Medical Test and Biometrics",
     desc: "Undergo a medical fitness test (blood test and chest X-ray) and submit biometrics for your Emirates ID card.",
   },
   {
-    id: "004",
+   
     title: "Visa Approval and Travel",
     desc: "After approval, receive your one-year renewable visa. Book your flight, travel to Dubai, and complete residency stamping and ID registration.",
   },
@@ -108,7 +108,7 @@ export default function StudentCounselling() {
             >
               <div className="flex items-center justify-between mb-4">
                 <FaRegClipboard className="text-orange-500 text-xl group-hover:scale-110 transition" />
-                <div className="text-black font-bold text-xl">{item.id}</div>
+               
               </div>
               <h3 className="text-lg font-semibold mb-2 bg-gradient-to-r from-black to-orange-400 bg-clip-text text-transparent">
                 {item.title}
